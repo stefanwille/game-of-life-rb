@@ -10,14 +10,12 @@ describe 'Game' do
       expect(game.live?(true, 2)).to be true
       expect(game.live?(true, 3)).to be true
       expect(game.live?(true, 4)).to be false
-      expect(game.live?(true, 5)).to be false
 
       expect(game.live?(false, 0)).to be false
       expect(game.live?(false, 1)).to be false
       expect(game.live?(false, 2)).to be false
       expect(game.live?(false, 3)).to be true
       expect(game.live?(false, 4)).to be false
-      expect(game.live?(false, 5)).to be false
     end
 
     describe '#step' do

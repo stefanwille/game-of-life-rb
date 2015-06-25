@@ -32,13 +32,13 @@ class Game
     new_grid = Grid.new(@width, @height)
     @height.times do |y|
       @width.times do |x|
-        new_grid.set(x, y, new_live(x, y))
+        new_grid.set(x, y, live_in_next_step?(x, y))
       end
     end
     @grid = new_grid
   end
 
-  private def new_live(x, y)
+  private def live_in_next_step?(x, y)
   live = @grid.cell(x, y)
   neighbours = @grid.neighbours(x, y)
   live?(live, neighbours)

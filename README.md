@@ -1,12 +1,3 @@
-# README.md
+# Exercise: Game of Life
 
-
-## This is not nice
-
-eoijsef
-
-Oh, what happened?
-
-Can I get rid of this crazyness?
-
-This is no so nice.
+A basic Game of Life implementation in Ruby
